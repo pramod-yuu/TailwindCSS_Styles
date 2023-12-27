@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.radial-black{
+    background:radial-gradient(rgb(75, 74, 74),rgb(29, 24, 24))
+}
+.min-phone-height{
+    min-height: 130vh;
+}
