@@ -10,15 +10,25 @@
 <body class="min-h-screen sm:min-h-screen bg-slate-50 dark:radial-black text-white ">
   <header id="head" class="text-white  top-0 z-10 radial-black ">
     <section class="sm:max-w-8xl p-6 flex justify-around items-center ">
+      <div class="pyramid-loader w-20 h-20 block transform-style-preserve-3d -rotate-x-20">
+        <div class="wrapper w-full h-full transform-style-preserve-3d animate-spin">
+          <span class="side side1 w-5 h-5 absolute top-0 left-0 right-0 bottom-0 m-auto transform-origin-center-top"></span>
+          <span class="side side2 w-5 h-5 absolute top-0 left-0 right-0 bottom-0 m-auto transform-origin-center-top"></span>
+          <span class="side side3 w-5 h-5 absolute top-0 left-0 right-0 bottom-0 m-auto transform-origin-center-top"></span>
+          <span class="side side4 w-5 h-5 absolute top-0 left-0 right-0 bottom-0 m-auto transform-origin-center-top"></span>
+          <span class="shadow w-15 h-15 bg-[#8B5AD5] absolute top-0 left-0 right-0 bottom-0 m-auto transform-rotate-x-90 transform-translate-z-negative-40 filter-blur-12"></span>
+        </div>
+      </div>
+      
       <h1 class="p-6 text-4xl font-medium sm:left-0 hover:opacity-90 "><a href="https://www.linkedin.com/in/pramod-tata-52206115b/" target="_blank">Pramod Tata</a></h1>
       <div>
         <button
           id="hamburger-button"
-          class="text-3xl md:hidden cursor-pointer relative w-8 h-8"
+          class="text-3xl md:hidden cursor-pointer relative w-8 h-8 z-20"
         >
           <!-- &#9776; -->
           <div
-            class="bg-white w-8 h-1 rounded absolute top-4 -mt-0.5 transition-all duration-500 before:content-[''] before:bg-white before:w-8 before:h-1 before:rounded before:absolute before:-translate-x-4 before:-translate-y-3 before:transition-all before:duration-500 after:content-[''] after:bg-white after:w-8 after:h-1 after:rounded after:absolute after:-translate-x-4 after:translate-y-3 after:transition-all after:duration-500"
+            class="bg-white w-8 h-1 z-20 rounded absolute top-4 -mt-0.5 transition-all duration-500 before:content-[''] before:bg-white before:w-8 before:h-1 before:rounded before:absolute before:-translate-x-4 before:-translate-y-3 before:transition-all before:duration-500 after:content-[''] after:bg-white after:w-8 after:h-1 after:rounded after:absolute after:-translate-x-4 after:translate-y-3 after:transition-all after:duration-500"
           ></div>
         </button>
         <nav class="hidden sm:block space-x-8 text-xl" aria-label="code">
@@ -130,20 +140,168 @@
     <br>
     <textarea name="Random_fact" id="textarea1" class="block mx-auto rounded-xl text-center text-black"cols="30" rows="5">Joke of the day</textarea>
     <br>
+    <div class="text-center">
     <label for="button">
-      <input type="submit" name="submit" class="block mx-auto border bg-slate-400 text-black rounded-2xl text-xl" id="submit" value="Click me!">
-    </label>
- </section>
- <footer id="contact1" class="bg-slate-900">
-  <h3 class="text-center">What's next?</h3>
-  <h1 class="text-center font-bold text-xl">Let's Work Together!</h1>
-  <span class="text-balance sm:text-center"><article>If you'd like to talk about a project you want help with or 
+  <button
+  style="-webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));"
+  class="px-10 py-3 bg-gradient-to-r from-red-500 to-orange-500 rounded-full shadow-xl group-hover:shadow-2xl group-hover:shadow-red-600 shadow-red-600 uppercase font-serif tracking-widest relative overflow-hidden group text-transparent cursor-pointer z-10 after:absolute after:rounded-full after:bg-red-200 after:h-[85%] after:w-[95%] after:left-1/2 after:top-1/2 after:-translate-x-1/2 after:-translate-y-1/2 hover:saturate-[1.15] active:saturate-[1.4]" id="submit">
+  Button
+  <p
+    class="absolute z-40 font-semibold bg-gradient-to-r from-red-500 to-orange-500 bg-clip-text text-transparent top-1/2 left-1/2 -translate-x-1/2 group-hover:-translate-y-full h-full w-full transition-all duration-300 -translate-y-[30%] tracking-widest"
+  >
+    CLICK ME!
+  </p>
+  <p
+    class="absolute z-40 top-1/2 left-1/2 bg-gradient-to-r from-red-700 to-orange-700 bg-clip-text text-transparent -translate-x-1/2 translate-y-full h-full w-full transition-all duration-300 group-hover:-translate-y-[40%] tracking-widest font-extrabold"
+  >
+    LET'S GO
+  </p>
+  <svg
+    class="absolute w-full h-full scale-x-125 rotate-180 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 group-hover:animate-none animate-pulse group-hover:-translate-y-[45%] transition-all duration-300"
+    viewBox="0 0 2400 800"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <defs>
+      <linearGradient id="sssurf-grad" y2="100%" x2="50%" y1="0%" x1="50%">
+        <stop
+          offset="0%"
+          stop-opacity="1"
+          stop-color="hsl(37, 99%, 67%)"
+        ></stop>
+        <stop
+          offset="100%"
+          stop-opacity="1"
+          stop-color="hsl(316, 73%, 52%)"
+        ></stop>
+      </linearGradient>
+    </defs>
+    <g transform="matrix(1,0,0,1,0,-91.0877685546875)" fill="url(#sssurf-grad)">
+      <path
+        opacity="0.05"
+        transform="matrix(1,0,0,1,0,35)"
+        d="M 0 305.9828838196134 Q 227.6031525693441 450 600 302.17553022897005 Q 1010.7738828515054 450 1200 343.3024459932802 Q 1379.4406250195766 450 1800 320.38902780838214 Q 2153.573162029817 450 2400 314.38564046970816 L 2400 800 L 0 800 L 0 340.3112176762882 Z"
+      ></path>
+      <path
+        opacity="0.21"
+        transform="matrix(1,0,0,1,0,70)"
+        d="M 0 305.9828838196134 Q 227.6031525693441 450 600 302.17553022897005 Q 1010.7738828515054 450 1200 343.3024459932802 Q 1379.4406250195766 450 1800 320.38902780838214 Q 2153.573162029817 450 2400 314.38564046970816 L 2400 800 L 0 800 L 0 340.3112176762882 Z"
+      ></path>
+      <path
+        opacity="0.37"
+        transform="matrix(1,0,0,1,0,105)"
+        d="M 0 305.9828838196134 Q 227.6031525693441 450 600 302.17553022897005 Q 1010.7738828515054 450 1200 343.3024459932802 Q 1379.4406250195766 450 1800 320.38902780838214 Q 2153.573162029817 450 2400 314.38564046970816 L 2400 800 L 0 800 L 0 340.3112176762882 Z"
+      ></path>
+      <path
+        opacity="0.53"
+        transform="matrix(1,0,0,1,0,140)"
+        d="M 0 305.9828838196134 Q 227.6031525693441 450 600 302.17553022897005 Q 1010.7738828515054 450 1200 343.3024459932802 Q 1379.4406250195766 450 1800 320.38902780838214 Q 2153.573162029817 450 2400 314.38564046970816 L 2400 800 L 0 800 L 0 340.3112176762882 Z"
+      ></path>
+      <path
+        opacity="0.68"
+        transform="matrix(1,0,0,1,0,175)"
+        d="M 0 305.9828838196134 Q 227.6031525693441 450 600 302.17553022897005 Q 1010.7738828515054 450 1200 343.3024459932802 Q 1379.4406250195766 450 1800 320.38902780838214 Q 2153.573162029817 450 2400 314.38564046970816 L 2400 800 L 0 800 L 0 340.3112176762882 Z"
+      ></path>
+      <path
+        opacity="0.84"
+        transform="matrix(1,0,0,1,0,210)"
+        d="M 0 305.9828838196134 Q 227.6031525693441 450 600 302.17553022897005 Q 1010.7738828515054 450 1200 343.3024459932802 Q 1379.4406250195766 450 1800 320.38902780838214 Q 2153.573162029817 450 2400 314.38564046970816 L 2400 800 L 0 800 L 0 340.3112176762882 Z"
+      ></path>
+      <path
+        opacity="1"
+        transform="matrix(1,0,0,1,0,245)"
+        d="M 0 305.9828838196134 Q 227.6031525693441 450 600 302.17553022897005 Q 1010.7738828515054 450 1200 343.3024459932802 Q 1379.4406250195766 450 1800 320.38902780838214 Q 2153.573162029817 450 2400 314.38564046970816 L 2400 800 L 0 800 L 0 340.3112176762882 Z"
+      ></path>
+    </g>
+  </svg>
+  <svg
+    class="absolute w-full h-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-[30%] group-hover:-translate-y-[33%] group-hover:scale-95 transition-all duration-500 z-40 fill-red-500"
+    viewBox="0 0 1440 320"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M0,288L9.2,250.7C18.5,213,37,139,55,133.3C73.8,128,92,192,111,224C129.2,256,148,256,166,256C184.6,256,203,256,222,250.7C240,245,258,235,277,213.3C295.4,192,314,160,332,170.7C350.8,181,369,235,388,229.3C406.2,224,425,160,443,122.7C461.5,85,480,75,498,74.7C516.9,75,535,85,554,101.3C572.3,117,591,139,609,170.7C627.7,203,646,245,665,256C683.1,267,702,245,720,245.3C738.5,245,757,267,775,266.7C793.8,267,812,245,831,234.7C849.2,224,868,224,886,218.7C904.6,213,923,203,942,170.7C960,139,978,85,997,53.3C1015.4,21,1034,11,1052,48C1070.8,85,1089,171,1108,197.3C1126.2,224,1145,192,1163,197.3C1181.5,203,1200,245,1218,224C1236.9,203,1255,117,1274,106.7C1292.3,96,1311,160,1329,170.7C1347.7,181,1366,139,1385,128C1403.1,117,1422,139,1431,149.3L1440,160L1440,320L1430.8,320C1421.5,320,1403,320,1385,320C1366.2,320,1348,320,1329,320C1310.8,320,1292,320,1274,320C1255.4,320,1237,320,1218,320C1200,320,1182,320,1163,320C1144.6,320,1126,320,1108,320C1089.2,320,1071,320,1052,320C1033.8,320,1015,320,997,320C978.5,320,960,320,942,320C923.1,320,905,320,886,320C867.7,320,849,320,831,320C812.3,320,794,320,775,320C756.9,320,738,320,720,320C701.5,320,683,320,665,320C646.2,320,628,320,609,320C590.8,320,572,320,554,320C535.4,320,517,320,498,320C480,320,462,320,443,320C424.6,320,406,320,388,320C369.2,320,351,320,332,320C313.8,320,295,320,277,320C258.5,320,240,320,222,320C203.1,320,185,320,166,320C147.7,320,129,320,111,320C92.3,320,74,320,55,320C36.9,320,18,320,9,320L0,320Z"
+      fill-opacity="1"
+    ></path>
+  </svg>
+  </button>
+  <!-- < class="block mx-auto border bg-slate-400 text-black rounded-2xl text-xl" > -->
+  </label>
+  </div>
+</section>
+<section class="p-10 ">
+
+<div class="card flex items-center justify-center p-10">
+  <p class="mx-5"> Check me ----> </p>
+  <div
+    class="relative bg-black w-[300px] sm:w-[350px] group transition-all duration-700 aspect-video flex items-center justify-center"
+  >
+    <div
+      class="transition-all flex flex-col items-center py-5 justify-start duration-300 group-hover:duration-1000 bg-white w-full h-full absolute group-hover:-translate-y-16"
+    >
+      <p class="text-xl sm:text-2xl font-semibold text-gray-500 font-serif">
+        Thank You
+      </p>
+      <p class="px-10 text-[10px] sm:text-[12px] text-gray-700">
+        It’s so nice that you had the time to view this idea
+      </p>
+      <p class="font-serif text-[10px] sm:text-[12px text-gray-700">
+        Wishing you a fantastic day ahead!
+      </p>
+      <p class="font-sans text-[10px] text-gray-700 pt-5">Pramod Tata</p>
+    </div>
+    <button
+      class="seal bg-rose-500 text-red-800 w-10 aspect-square rounded-full z-40 text-[10px] flex items-center justify-center font-semibold [clip-path:polygon(50%_0%,_80%_10%,_100%_35%,_100%_70%,_80%_90%,_50%_100%,_20%_90%,_0%_70%,_0%_35%,_20%_10%)] group-hover:opacity-0 transition-all duration-1000 group-hover:scale-0 group-hover:rotate-180 border-4 border-rose-900"
+    >
+      YUUMO
+    </button>
+    <div
+      class="tp transition-all duration-1000 group-hover:duration-100 bg-neutral-800 absolute group-hover:[clip-path:polygon(50%_0%,_100%_0,_0_0)] w-full h-full [clip-path:polygon(50%_50%,_100%_0,_0_0)]"
+    ></div>
+    <div
+      class="lft transition-all duration-700 absolute w-full h-full bg-neutral-900 [clip-path:polygon(50%_50%,_0_0,_0_100%)]"
+    ></div>
+    <div
+      class="rgt transition-all duration-700 absolute w-full h-full bg-neutral-800 [clip-path:polygon(50%_50%,_100%_0,_100%_100%)]"
+    ></div>
+    <div
+      class="btm transition-all duration-700 absolute w-full h-full bg-neutral-900 [clip-path:polygon(50%_50%,_100%_100%,_0_100%)]"
+    ></div>
+  </div>
+</div>
+</section class="">
+ <footer id="contact1" class="radial-black p-8">
+  <h3 class="text-left italic p-1">What's next?</h3>
+  <h1 class="text-left font-bold text-2xl p-0.5">Let's Work Together!</h1>
+  <span class="text-balance sm:text-left py-0.5"><article>If you'd like to talk about a project you want help with or 
     need an advice about product design, just drop me a message at <a href="mailto:pramodneeraj1527@gmail.com" class="font-extrabold">pramodneeraj1527@gmail.com</a>
     I'm currently Available for any design systems projects, dashboard designs or landing pages gigs.</article> </span>
-  <em class="text-left px-2 top-full">Made from Scratch by me</em> 
+    <div class="main1 flex justify-end items-end">
+      <div class="up1">
+        <a href="https://www.instagram.com/pramod_tata/?hl=en"target="_blank">
+        <button class="card1a flex flex-col ">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="30px" height="30px" fill-rule="nonzero" class="instagram"><g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8,8)"><path d="M11.46875,5c-3.55078,0 -6.46875,2.91406 -6.46875,6.46875v9.0625c0,3.55078 2.91406,6.46875 6.46875,6.46875h9.0625c3.55078,0 6.46875,-2.91406 6.46875,-6.46875v-9.0625c0,-3.55078 -2.91406,-6.46875 -6.46875,-6.46875zM11.46875,7h9.0625c2.47266,0 4.46875,1.99609 4.46875,4.46875v9.0625c0,2.47266 -1.99609,4.46875 -4.46875,4.46875h-9.0625c-2.47266,0 -4.46875,-1.99609 -4.46875,-4.46875v-9.0625c0,-2.47266 1.99609,-4.46875 4.46875,-4.46875zM21.90625,9.1875c-0.50391,0 -0.90625,0.40234 -0.90625,0.90625c0,0.50391 0.40234,0.90625 0.90625,0.90625c0.50391,0 0.90625,-0.40234 0.90625,-0.90625c0,-0.50391 -0.40234,-0.90625 -0.90625,-0.90625zM16,10c-3.30078,0 -6,2.69922 -6,6c0,3.30078 2.69922,6 6,6c3.30078,0 6,-2.69922 6,-6c0,-3.30078 -2.69922,-6 -6,-6zM16,12c2.22266,0 4,1.77734 4,4c0,2.22266 -1.77734,4 -4,4c-2.22266,0 -4,-1.77734 -4,-4c0,-2.22266 1.77734,-4 4,-4z"></path></g></g></svg>
+        </button></a>
+        
+        <button class="card2a">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="30px" height="30px" class="twitter"><path d="M42,12.429c-1.323,0.586-2.746,0.977-4.247,1.162c1.526-0.906,2.7-2.351,3.251-4.058c-1.428,0.837-3.01,1.452-4.693,1.776C34.967,9.884,33.05,9,30.926,9c-4.08,0-7.387,3.278-7.387,7.32c0,0.572,0.067,1.129,0.193,1.67c-6.138-0.308-11.582-3.226-15.224-7.654c-0.64,1.082-1,2.349-1,3.686c0,2.541,1.301,4.778,3.285,6.096c-1.211-0.037-2.351-0.374-3.349-0.914c0,0.022,0,0.055,0,0.086c0,3.551,2.547,6.508,5.923,7.181c-0.617,0.169-1.269,0.263-1.941,0.263c-0.477,0-0.942-0.054-1.392-0.135c0.94,2.902,3.667,5.023,6.898,5.086c-2.528,1.96-5.712,3.134-9.174,3.134c-0.598,0-1.183-0.034-1.761-0.104C9.268,36.786,13.152,38,17.321,38c13.585,0,21.017-11.156,21.017-20.834c0-0.317-0.01-0.633-0.025-0.945C39.763,15.197,41.013,13.905,42,12.429"></path></svg>
+        </button>
+      </div>
+      <div class="down1 flex flex-col"><a href="https://github.com/pramod-yuu"target="_blank">
+        <button class="card3a ">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30px" height="30px" class="github">    <path d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"></path></svg>
+        </button></a>
+        <a href="https://discord.com/channels/@yuu_shiba" target="_blank">
+        <button class="card4a flex flex-col">
+          <svg height="30px" width="30px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" class="discord"><path d="M40,12c0,0-4.585-3.588-10-4l-0.488,0.976C34.408,10.174,36.654,11.891,39,14c-4.045-2.065-8.039-4-15-4s-10.955,1.935-15,4c2.346-2.109,5.018-4.015,9.488-5.024L18,8c-5.681,0.537-10,4-10,4s-5.121,7.425-6,22c5.162,5.953,13,6,13,6l1.639-2.185C13.857,36.848,10.715,35.121,8,32c3.238,2.45,8.125,5,16,5s12.762-2.55,16-5c-2.715,3.121-5.857,4.848-8.639,5.815L33,40c0,0,7.838-0.047,13-6C45.121,19.425,40,12,40,12z M17.5,30c-1.933,0-3.5-1.791-3.5-4c0-2.209,1.567-4,3.5-4s3.5,1.791,3.5,4C21,28.209,19.433,30,17.5,30z M30.5,30c-1.933,0-3.5-1.791-3.5-4c0-2.209,1.567-4,3.5-4s3.5,1.791,3.5,4C34,28.209,32.433,30,30.5,30z"></path></svg>
+        </button>
+      </a>
+      </div>
+    </div>  
+  <em class="flex justify-center items-center py-3">Made from Scratch by me</em> 
 </footer>
-</body>
-<script src="/build/JS/code.js"></script>
+</body><script src="/build/JS/code.js"></script>
 </main>
 
 </html>

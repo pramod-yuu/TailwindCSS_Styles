@@ -1,4 +1,5 @@
 const initapp=()=>{
+    console.log("This is being loaded");
     const hamburgerbtn=document.getElementById('hamburger-button');
     const mobilemenu=document.getElementById('mobile-menu');
     const togglemenu=()=>{

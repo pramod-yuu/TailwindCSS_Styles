@@ -3,7 +3,7 @@
 @tailwind components;
 @layer utilities{
     .radial-black{
-        background:radial-gradient(rgb(75, 74, 74),rgb(29, 24, 24))
+        background:radial-gradient(rgb(45, 44, 44),rgb(0, 0, 0))
     }
     .min-phone-height{
         min-height: 130vh;
@@ -14,4 +14,216 @@
     .toggle-btn{
       @apply [&>div::before]:translate-y-0 [&>div::before]:rotate-45 [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div]:bg-transparent [&>div]:rotate-[720deg]
     }
+    .transform-style-preserve-3d {
+        transform-style: preserve-3d;
+    }
+    .-rotate-x-20 {
+        transform: rotateX(-20deg);
+    }
+    .rotate-x-90 {
+        transform: rotateX(90deg);
+    }
+    .translate-z-negative-40 {
+        transform: translateZ(-40px);
+    }
+    .filter-blur-12 {
+        filter: blur(12px);
+    }
+    .w-18 {
+        width: 2.5rem; /* Adjust as needed */
+    }
+    .w-15 {
+        width: 2.75rem; /* Adjust as needed */
+    }
+    .h-18 {
+        height: 2.5rem; /* Adjust the height value as needed */
+    }
+    .h-15 {
+        width: 2.75rem; /* Adjust as needed */
+    }
+    .pyramid-loader {
+        @apply relative w-18 h-18 block transform-style-preserve-3d -rotate-x-20;
+    }
+    .wrapper {
+        @apply relative w-full h-18 transform-style-preserve-3d;
+        animation: spin 4s linear infinite;
+    }
+    .side {
+        @apply w-18 h-18 absolute top-0 left-0 right-0 bottom-0 m-auto;
+        transform-origin: center top;
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    }
+    .side1 {
+        transform: rotateZ(-30deg) rotateY(90deg);
+        background: conic-gradient(#2BDEAC, #F028FD, #D8CCE6, #2F2585);
+    }
+    .side2 {
+        transform: rotateZ(30deg) rotateY(90deg);
+        background: conic-gradient(#2F2585, #D8CCE6, #F028FD, #2BDEAC);
+    }
+    .side3 {
+        transform: rotateX(30deg);
+        background: conic-gradient(#2F2585, #D8CCE6, #F028FD, #2BDEAC);
+    }
+    .side4 {
+        transform: rotateX(-30deg);
+        background: conic-gradient(#2BDEAC, #F028FD, #D8CCE6, #2F2585);
+    }
+    .shadow {
+        @apply w-15 h-15 bg-[#8B5AD5] absolute top-0 left-0 right-0 bottom-0 m-auto;
+        transform: rotateX(90deg) translate-z-negative-40;
+        filter: blur(12px);
+    }
+    
+    @keyframes spin {
+    100% {
+        transform: rotateY(360deg);
+    }}
+    .w-50 {
+        width: 12.5rem; /* Adjust to the desired width */
+      }
+    .button-icon:hover .cube {
+        @apply transform rotate-x-90;
+      }
+    
+      .cube1 {
+        @apply transition-all duration-500 transform-style-preserve-3d;
+      }
+    
+      .side9 {
+        @apply absolute h-12 w-50 flex text-xs justify-center items-center uppercase tracking-wider font-bold;
+      }
+    
+      .top1 {
+        @apply bg-pink-300 text-white;
+        transform: rotateX(-90deg) translate3d(0, 13.5px, 2em);
+      }
+    
+      .front1 {
+        @apply bg-gray-900 text-white;
+        transform: translate3d(0, 0, 1em);
+      }
+
+      .main1 {
+        @apply flex flex-col gap-2;
+      }
+      
+      .up1 {
+        @apply flex flex-row gap-2;
+      }
+      
+      .down1 {
+        @apply flex flex-row;
+        gap: 0.5em;
+      }
+      
+      .card1a {
+        width: 90px;
+        height: 90px;
+        outline: none;
+        border: none;
+        background: white;
+        border-radius: 90px 5px 5px 5px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        transition: .2s ease-in-out;
+      }
+      
+
+      
+      .card2a {
+        width: 90px;
+        height: 90px;
+        outline: none;
+        border: none;
+        background: white;
+        border-radius: 5px 90px 5px 5px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        transition: .2s ease-in-out;
+      }
+      .instagram {
+        margin-top: 2.5em;
+        margin-left: 2.5em;
+        fill: #cc39a4;
+      }
+      
+      .twitter {
+        margin-top: 1.3em;
+        margin-left: 1.3em;
+        fill: #03A9F4;
+      }
+      .github {
+        margin-top: -1.2em;
+        margin-left: 2.5em;
+      }
+      .discord {
+        margin-top: 1.2em;
+        margin-left: 1.5em;
+        fill: #8c9eff;
+      }
+      
+      .card3a {
+        width: 90px;
+        height: 90px;
+        outline: none;
+        border: none;
+        background: white;
+        border-radius: 5px 5px 5px 90px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        transition: .2s ease-in-out;
+      }
+      
+
+      
+      .card4a {
+        width: 90px;
+        height: 90px;
+        outline: none;
+        border: none;
+        background: white;
+        border-radius: 5px 5px 90px 5px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        transition: .2s ease-in-out;
+      }
+      
+
+      
+      .card1a:hover {
+        cursor: pointer;
+        scale: 1.1;
+        background-color: #cc39a4;
+      }
+      
+      .card1a:hover .instagram {
+        fill: white;
+      }
+      
+      .card2a:hover {
+        cursor: pointer;
+        scale: 1.1;
+        background-color: #03A9F4;
+      }
+      
+      .card2a:hover .twitter {
+        fill: white;
+      }
+      
+      .card3a:hover {
+        cursor: pointer;
+        scale: 1.1;
+        background-color: black;
+      }
+      
+      .card3a:hover .github {
+        fill: white;
+      }
+      
+      .card4a:hover {
+        cursor: pointer;
+        scale: 1.1;
+        background-color: #8c9eff;
+      }
+      
+      .card4a:hover .discord {
+        fill: white;
+      }
 }
